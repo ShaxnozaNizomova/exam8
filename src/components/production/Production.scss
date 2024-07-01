@@ -1,0 +1,40 @@
+.production{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 40px 0;
+    &__title{
+        color: #454545;
+        font-weight: 700px;
+        font-size: 40px;
+        line-height: 54px;
+        font-family: Manrope;
+    }
+    &__text{
+        color: #454545;
+        font-weight: 500px;
+        font-size: 20px;
+        line-height: 26px;
+        font-family: Manrope;
+        max-width: 750px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .production{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 340px;
+        padding: 20px 0;
+        &__title{
+            font-weight: 700px;
+            font-size: 28px;
+            line-height: 34px;
+            text-align: start;
+            padding-bottom: 10px;
+        }
+    }
+}

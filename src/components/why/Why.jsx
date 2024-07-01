@@ -47,6 +47,12 @@ const Why = () => {
           </div>
         </div>
       </div>
+      <div className="katalog__text">
+        <h4 className="katalog__title">Популярные товары</h4>
+        <Link to={"/allProducts"}>
+          <button className="btn">Все товары ></button>
+        </Link>
+      </div>
     </div>
   );
 };

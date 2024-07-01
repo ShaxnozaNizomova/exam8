@@ -14,6 +14,7 @@ import Wishlist from "./pages/wishlist/Wishlist";
 import Catalog from "./pages/catalog/Catalog";
 import Admin from "./pages/admin/Admin";
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 const App = () => {
   return (
     <div>
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

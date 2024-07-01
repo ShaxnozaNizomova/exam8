@@ -43,7 +43,7 @@ const Navbar = () => {
           <NavLink to={"/"}>
             <img src={logo} alt="logo" />
           </NavLink>
-          <NavLink to={"/category"}>
+          <NavLink to={"/catalog"}>
             <img src={category} alt="category" />
           </NavLink>
         </div>

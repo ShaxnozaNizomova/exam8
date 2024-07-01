@@ -1,0 +1,88 @@
+.products {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+   padding-top: 30px;
+   padding-bottom: 40px;
+    &__card {
+      position: relative; 
+      width: 300px;
+      &__title{
+        color: #454545;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+        font-family: Manrope;
+        text-transform: capitalize;
+      }
+      &__oldPrice{
+        color: #9F9F9F;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 13px;
+        font-family: Manrope;
+        text-decoration: line-through;
+        padding: 5px 0;
+      }
+      &__price{
+        color: #454545;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 22px;
+        font-family: Manrope;
+      }
+    &__cart{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+      &__img {
+        position: relative;
+        width: 100%; 
+        height: 220px; 
+        
+      }
+    }
+  }
+  .like__btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 1; 
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .cart__btn{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  @media screen and (max-width: 480px) {
+       .products{
+        display: flex;
+        justify-content: space-between;
+        max-width: 340px;
+        margin: 0 auto;
+        padding: 20px;
+        &__card{
+          width: 140px;
+         &__img{
+           width: 140px;
+           height: 120px;
+         }
+        }
+       }
+       .like__btn {
+        svg {
+          width: 10px;
+          height: 10px;
+        }
+      }
+  }

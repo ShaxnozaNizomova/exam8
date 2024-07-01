@@ -6,6 +6,7 @@ const initialState = {
   price: "",
   desc: "",
   urls: "",
+  category: "",
 };
 const CreateProduct = () => {
   const { formData, setFormData, handleChange } =
@@ -15,9 +16,9 @@ const CreateProduct = () => {
     e.preventDefault();
     formData.price = +formData.price;
     formData.urls = formData.urls.split("/n").filter((i) => i.trim());
-    console.log(formData);
     setFormData(initialState);
     createProduct(formData);
+    alert("Product created");
   };
   return (
     <div className="create__products">
