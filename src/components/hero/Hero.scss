@@ -1,0 +1,123 @@
+.hero{
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 50px;
+    margin: 30px 0;
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        &__title{
+            color: #454545;
+           max-width: 580px;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 87px;
+            font-family: Manrope;
+            padding-top: 40px;
+        }
+        &__span{
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 87px;
+            font-family: Manrope;
+            border: 1px solid #454545;
+            border-radius: 100px;
+            background-color: #454545;
+            padding:  0 20px 20px;
+            
+        }
+    }
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+    .hero{
+     width: 900px;
+     margin: 0 auto;
+     &__items{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         max-width: 870px;
+         margin: 0 auto;
+         flex-wrap: nowrap;
+         &__title {
+             font-size: 58px;
+             line-height: 64px;
+             padding-top: 15px;
+           }
+           &__span {
+             font-size: 58px;
+             line-height: 64px;
+             padding: 20px 25px;
+             margin-bottom: 20px;
+             margin-top: 8px;
+           }
+     }
+    } 
+   }
+@media (min-width: 480px) and (max-width: 780px) {
+   .hero{
+    width: 660px;
+    margin: 0 auto;
+    &__items{
+        flex-direction: column-reverse; 
+        align-items: center; 
+        padding: 20px; 
+        display: flex;
+        justify-content: center;
+        img{
+            width: 570px;
+            height: 570px;
+            margin-bottom: 25px;
+        }
+        &__title {
+            font-size: 48px;
+            line-height: 54px;
+            padding-top: 15px;
+            width: 560px;
+          }
+          &__span {
+            font-size: 48px;
+            line-height: 54px;
+            padding: 20px 25px;
+            margin-bottom: 20px;
+            margin-top: 8px;
+            max-width: 400px;
+          }
+    }
+   } 
+  }
+  @media (min-width: 330px) and (max-width: 480px) {
+    .hero{
+     width: 340px;
+     margin: 0 auto;
+     &__items{
+         flex-direction: column-reverse; 
+         align-items: center; 
+         padding: 20px; 
+         display: flex;
+         justify-content: center;
+         img{
+             width: 270px;
+             height: 270px;
+             margin-bottom: 25px;
+         }
+         &__title {
+             font-size: 28px;
+             line-height: 34px;
+             padding-top: 15px;
+             width: 260px;
+           }
+           &__span {
+            width: 260px;
+          font-size: 28px;
+          line-height: 34px;
+          padding: 0 10px 10px;
+        }
+     }
+    } 
+   }

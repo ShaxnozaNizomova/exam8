@@ -1,0 +1,200 @@
+.katalog{
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        align-items: center;
+    }
+    &__title{
+        color: #454545;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 54px;
+        font-family: Manrope;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        &__card{
+            display: flex;
+            justify-content: space-between;
+            width: 420px;
+            padding: 15px;
+            border: 1px solid #F2F2F2;
+            background-color: #F2F2F2;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            img{
+                width: 200px;
+            }
+            &__title{
+                color: #454545;
+                font-family: Manrope;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 22px;
+                padding-bottom: 158px;
+                padding-top: 8px;
+            }
+            &__text{
+                color: #454545;
+                font-family: Manrope;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 15px;
+            }
+        }
+    }
+
+}
+.btn{
+   border: 1px solid #454545;
+   border-radius: 100px;
+   text-align: center;
+   padding: 10px 25px;
+   background-color: white;
+   color: #454545;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 21px;
+   font-family: Manrope;
+   cursor: pointer;
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+     .katalog{
+        &__text{
+            max-width: 750px;
+            padding-top: 120px;
+        }
+        &__items{
+            max-width: 750px;
+            padding: 10px;
+            &__card{
+                display: flex;
+                justify-content: space-between;
+                width: 270px;
+                padding: 10px;
+                border: 1px solid #F2F2F2;
+                background-color: #F2F2F2;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                img{
+                    width: 120px;
+                }
+                &__title{
+                    padding-bottom: 140px;
+                }
+            }
+        }
+     }
+}
+@media (min-width: 760px) and (max-width: 900px) {
+    .katalog{
+        &__text{
+            max-width: 750px;
+            padding: 10px;
+        }
+       &__items{
+           max-width: 750px;
+           padding: 20px;
+           &__card{
+               display: flex;
+               justify-content: space-between;
+               width: 350px;
+               padding: 10px;
+               border: 1px solid #F2F2F2;
+               background-color: #F2F2F2;
+               border-radius: 20px;
+               margin-bottom: 20px;
+               img{
+                   width: 160px;
+               }
+               &__title{
+                   padding-bottom: 140px;
+               }
+           }
+       }
+    }
+}
+@media (min-width: 500px) and (max-width: 760px) {
+    .katalog{
+        &__text{
+            max-width: 480px;
+            padding: 10px;
+        }
+        &__title{
+            color: #454545;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 34px;
+            font-family: Manrope;
+        }
+       &__items{
+           max-width: 480px;
+           padding: 10px;
+           margin: 0 auto;
+           &__card{
+               display: flex;
+               justify-content: space-between;
+               width: 220px;
+               padding: 10px;
+               border: 1px solid #F2F2F2;
+               background-color: #F2F2F2;
+               border-radius: 20px;
+               margin-bottom: 20px;
+               img{
+                   width: 80px;
+               }
+               &__title{
+                   padding-bottom: 100px;
+               }
+           }
+       }
+    }
+}
+@media (min-width: 330px) and (max-width: 480px) {
+    .katalog{
+        &__text{
+            max-width: 330px;
+            padding: 10px;
+        }
+        &__title{
+            color: #454545;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 32px;
+            font-family: Manrope;
+        }
+       &__items{
+           max-width: 330px;
+           padding: 10px;
+           &__card{
+               display: block;
+               justify-content: center;
+               width: 140px;
+               padding: 10px;
+               border: 1px solid #F2F2F2;
+               background-color: #F2F2F2;
+               border-radius: 20px;
+               margin-bottom: 20px;
+               img{
+                   width: 80px;
+               }
+               &__title{
+                   padding-bottom: 1px;
+               }
+           }
+       }
+    }
+    .btn{
+        font-weight: 500;
+        font-size: 10px;
+         line-height: 11px;
+         padding: 10px;
+    }
+}
