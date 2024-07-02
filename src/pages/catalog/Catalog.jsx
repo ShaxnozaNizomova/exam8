@@ -5,7 +5,7 @@ import Blogs from "../../components/blogs/Blogs";
 import Production from "../../components/production/Production";
 const Catalog = () => {
   return (
-    <div>
+    <div className="about">
       <Katalog />
       <Brand />
       <Blogs />

@@ -13,16 +13,17 @@ import Basket from "./pages/basket/Basket";
 import Wishlist from "./pages/wishlist/Wishlist";
 import Catalog from "./pages/catalog/Catalog";
 import Admin from "./pages/admin/Admin";
-import Navbar from "./components/navbar/Navbar";
+import Navbarr from "./components/navbarr/Navbarr";
 import Footer from "./components/footer/Footer";
+import NotFound from "./components/notFound/NotFound";
 const App = () => {
   return (
     <div>
-      <Navbar />
+      <Navbarr />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/allProducts" element={<AllProducts />} />
-        <Route path="/single:id" element={<Single />} />
+        <Route path="/single/:id" element={<Single />} />
         <Route path="/about" element={<About />} />
         <Route path="/return" element={<Return />} />
         <Route path="/shipping" element={<Shipping />} />
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/not-found" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>

@@ -3,7 +3,7 @@ import CreateProduct from "../../components/createProduct/CreateProduct";
 
 const Admin = () => {
   return (
-    <div>
+    <div className="about">
       <h2>Admin</h2>
       <CreateProduct />
     </div>

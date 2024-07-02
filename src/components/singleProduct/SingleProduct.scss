@@ -1,0 +1,132 @@
+.single{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+    &__box2{
+        display: flex;
+       gap: 10px;
+        align-items: center;
+        padding: 20px 0;
+    }
+    &__btns{
+        display: flex;
+        gap: 10px;
+         align-items: center;
+         padding: 20px 0;
+         &__btn{
+            border: 1px solid #454545;
+            padding:16px 80px 16px 80px ;
+            background-color: #454545;
+            border-radius: 10px;
+            color: #FFFFFF;
+            font-family: Manrope;
+            font-weight: 500;
+            font-size: 16px;
+         }
+         &__like{
+            border: none;
+            background-color: transparent;
+         }
+         &__qty{
+            display: flex;
+            gap: 9px;
+            align-items: center;
+            border: 1px solid lightgrey;
+            padding: 16px 20px ;
+            border-radius: 10px;
+            button{
+                border: none;
+                background-color: transparent;
+                font-size: 14px;
+            }
+            p{
+                font-size: 16px;
+                font-family: Manrope;
+            }
+         }
+    }
+    &__details{
+        &__title{
+            color: #454545;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 44px;
+            font-family: Manrope;
+        }
+        &__price{
+            color: #101010;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 64px;
+            font-family: Manrope;
+        }
+        &__oldPrice{
+            color: #B3B3B3;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            font-family: Manrope;
+            text-decoration: line-through;
+        }
+        &__text{
+            color: #B3B3B3;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            font-family: Manrope;
+        }
+        &__text2{
+            color: #4D932C;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-bottom: 20px;
+        }
+        &__desc{
+            color: #4C4C4C;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+     .single{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 400px;
+        &__details{
+            padding-top: 20px;
+        }
+     }
+     .img{
+        width: 300px;
+        height: 250px;
+     }
+}
+@media screen and (max-width: 1200px) {
+    .single{
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       max-width: 1000px;
+       &__details{
+           padding-top: 20px;
+       }
+    }
+    .img{
+       width: 450px;
+       height: 310px;
+    }
+}

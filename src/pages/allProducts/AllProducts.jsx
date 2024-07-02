@@ -6,7 +6,7 @@ const AllProducts = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className="about">
       <div className="katalog__text">
         <h4 className="katalog__title">Популярные товары</h4>
       </div>

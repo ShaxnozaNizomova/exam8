@@ -1,0 +1,46 @@
+.aboutComp{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+    &__img{
+        margin-top: 15px;
+        padding: 10px;
+    }
+    &__text{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        color: #454545;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: Manrope;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .aboutComp{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 950px;
+        &__img{
+            width: 350px;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .aboutComp{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width:400px ;
+        margin: 0 auto;
+        &__img{
+            width: 340px;
+        }
+        &__text{
+            max-width: 360px;
+        }
+    }
+}

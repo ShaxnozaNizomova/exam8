@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import SingleProduct from "../../components/singleProduct/SingleProduct";
+import Character from "../../components/character/Character";
 
 const Single = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div>
-      <h2>Single</h2>
+    <div className="about">
+      <SingleProduct />
+      <Character />
     </div>
   );
 };

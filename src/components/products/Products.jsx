@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Products.scss";
 import { Link } from "react-router-dom";
-import { useGetProductsQuery } from "../../context/api/productApi";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../context/cartSlice";
 import { FaRegHeart, FaHeart } from "react-icons/fa";

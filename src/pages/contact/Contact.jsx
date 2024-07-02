@@ -1,9 +1,14 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import Contacts from "../../components/contacts/Contacts";
+import Map from "../../components/map/Map";
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div>
-      <h2>Contact</h2>
+    <div className="about">
+      <Contacts />
+      <Map />
     </div>
   );
 };

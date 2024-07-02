@@ -44,8 +44,9 @@
     .footer{
         &__items{
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            max-width: 340px;
+            max-width: 300px;
             &__menu{
                 padding-top: 15px;
             }

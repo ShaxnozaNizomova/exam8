@@ -5,7 +5,7 @@ import CartProducts from "../../components/cartProducts/CartProducts";
 const Basket = () => {
   const carts = useSelector((s) => s.cart.value);
   return (
-    <div>
+    <div className="about">
       <div className="katalog__text">
         <h4 className="katalog__title">Корзина</h4>
       </div>

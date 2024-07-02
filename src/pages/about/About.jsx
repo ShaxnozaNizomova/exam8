@@ -1,10 +1,11 @@
 import React from "react";
 import Brand from "../../components/brand/Brand";
 import Blogs from "../../components/blogs/Blogs";
+import AboutCompany from "../../components/aboutComp/AboutCompany";
 const About = () => {
   return (
-    <div>
-      <h2>About us</h2>
+    <div className="about">
+      <AboutCompany />
       <Brand />
       <Blogs />
     </div>

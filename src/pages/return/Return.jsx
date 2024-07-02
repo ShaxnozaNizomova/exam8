@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReturnMent from "../../components/returnment/ReturnMent";
 
 const Return = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div>
-      <h2>Return</h2>
+    <div className="about">
+      <ReturnMent />
     </div>
   );
 };
