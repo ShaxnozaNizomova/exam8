@@ -1,0 +1,13 @@
+.empty{
+    display: flex;
+    justify-content: center;
+    &__title{
+        text-align: center;
+        color: #454545;
+                font-family: Manrope;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 34px;
+                padding: 25px 0;
+    }
+}

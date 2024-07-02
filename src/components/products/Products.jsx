@@ -8,8 +8,7 @@ import { FaRegHeart, FaHeart } from "react-icons/fa";
 import carts from "../../assets/images/carts.svg";
 import { toggleLike } from "../../context/wishlistSlice";
 import Skeleton from "../skeleton/Skeleton";
-const Products = () => {
-  const { data } = useGetProductsQuery({ limit: 8 });
+const Products = ({ data }) => {
   let wishlist = useSelector((state) => state.wishlist.value);
   const dispatch = useDispatch();
   let product = data?.map((products) => (
