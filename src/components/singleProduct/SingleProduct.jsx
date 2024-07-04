@@ -19,7 +19,7 @@ const SingleProduct = () => {
   const { id } = useParams();
   const { data: product, isLoading } = useGetDetailProductQuery(id);
   if (isLoading) {
-    <SingleLoadin />;
+    return <SingleLoadin />;
   }
   const handleToggleLike = () => {
     dispatch(toggleLike(product));
@@ -59,7 +59,7 @@ const SingleProduct = () => {
             </div>
             <div>
               <button className="single__btns__like" onClick={handleToggleLike}>
-                {wishlist?.some((item) => item.id === product.id) ? (
+                {wishlist.some((item) => item.id === product?.id) ? (
                   <FaHeart
                     style={{ color: "red", width: "52px", height: "52px" }}
                   />

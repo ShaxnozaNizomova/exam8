@@ -16,6 +16,8 @@ import Admin from "./pages/admin/Admin";
 import Navbarr from "./components/navbarr/Navbarr";
 import Footer from "./components/footer/Footer";
 import NotFound from "./components/notFound/NotFound";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const App = () => {
   return (
     <div>
@@ -37,6 +39,7 @@ const App = () => {
         <Route path="/not-found" element={<NotFound />} />
       </Routes>
       <Footer />
+      <ToastContainer />
     </div>
   );
 };

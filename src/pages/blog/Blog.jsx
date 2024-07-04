@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Blogs from "../../components/blogs/Blogs";
 const Blog = () => {
   useEffect(() => {
