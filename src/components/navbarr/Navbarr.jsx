@@ -11,6 +11,8 @@ import { useGetProductsQuery } from "../../context/api/productApi";
 import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
+  const { pathname } = useLocation();
+  if (pathname.includes("/login") || pathname.includes("/admin")) return <></>;
   const [searchValue, setSearchValue] = useState("");
   const [filteredData, setFilteredData] = useState([]);
   const [isOpen, setIsOpen] = useState(false);

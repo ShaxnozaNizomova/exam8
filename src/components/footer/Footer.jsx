@@ -3,7 +3,10 @@ import "./Footer.scss";
 import logo from "../../assets/images/logo.svg";
 import vk from "../../assets/images/vk.svg";
 import card from "../../assets/images/card.svg";
+import { useLocation } from "react-router-dom";
 const Footer = () => {
+  const { pathname } = useLocation();
+  if (pathname.includes("/login") || pathname.includes("/admin")) return <></>;
   return (
     <div className="footer">
       <div className="footer__items">

@@ -16,8 +16,12 @@ import Admin from "./pages/admin/Admin";
 import Navbarr from "./components/navbarr/Navbarr";
 import Footer from "./components/footer/Footer";
 import NotFound from "./components/notFound/NotFound";
+import Login from "./pages/login/Login";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import CreateProduct from "./pages/CreateProduct/CreateProduct";
+import ManageProduct from "./pages/manageProduct/ManageProduct";
+import Auth from "./pages/auth/Auth";
 const App = () => {
   return (
     <div>
@@ -35,8 +39,15 @@ const App = () => {
         <Route path="/basket" element={<Basket />} />
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/catalog" element={<Catalog />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="admin" element={<Auth />}>
+          <Route path="" element={<Admin />}>
+            <Route path="create-product" element={<CreateProduct />} />
+            <Route path="manage-product" element={<ManageProduct />} />
+          </Route>
+        </Route>
         <Route path="/not-found" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
       <ToastContainer />

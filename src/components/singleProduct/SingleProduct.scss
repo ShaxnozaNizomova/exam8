@@ -109,6 +109,40 @@
         &__details{
             padding-top: 20px;
         }
+        &__btns{
+            display: flex;
+            gap: 10px;
+             align-items: center;
+             padding: 20px 0;
+             &__btn{
+                border: 1px solid #454545;
+                padding:10px 50px 10px 50px ;
+                background-color: #454545;
+                border-radius: 10px;
+                color: #FFFFFF;
+                font-family: Manrope;
+                font-weight: 500;
+                font-size: 16px;
+             }
+             &__like{
+                border: none;
+                background-color: transparent;
+                width: 28px;
+             }
+             &__qty{
+                display: flex;
+                gap: 9px;
+                align-items: center;
+                border: 1px solid lightgrey;
+                padding: 16px 20px ;
+                border-radius: 10px;
+                button{
+                    border: none;
+                    background-color: transparent;
+                    font-size: 14px;
+                }
+             }
+        }
      }
      .img{
         width: 300px;

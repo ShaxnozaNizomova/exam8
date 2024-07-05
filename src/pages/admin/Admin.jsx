@@ -1,11 +1,15 @@
 import React from "react";
-import CreateProduct from "../../components/createProduct/CreateProduct";
+import SideBar from "../../components/sidebar/SideBar";
+import { Outlet } from "react-router-dom";
+import "./Admin.scss";
 
 const Admin = () => {
   return (
-    <div className="about">
-      <h2>Admin</h2>
-      <CreateProduct />
+    <div className="admin__layout">
+      <SideBar />
+      <div className="admin__content">
+        <Outlet />
+      </div>
     </div>
   );
 };
